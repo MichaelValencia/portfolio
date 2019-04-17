@@ -87,6 +87,33 @@
 .menu-item:nth-child(5) {
   transition-delay: 0.5s; }
 
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
+
 * {
   box-sizing: border-box; }
 
@@ -254,8 +281,8 @@ footer,
 .icons {
   position: fixed;
   width: 100%;
-  padding: 0px 20px;
-  margin: 0px 20px; }
+  padding: auto;
+  margin: auto; }
 
 .icons i:hover {
   color: crimson; }
@@ -267,7 +294,7 @@ footer,
 
 .project-title {
   font-size: 1.6rem;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: white;
   font-weight: bold;
   text-decoration: underline; }
@@ -280,5 +307,12 @@ footer,
   text-decoration: underline; }
 
 .project-summary {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.4rem; }
+
+@media screen and (min-width: 768px) {
+  main {
+    height: 100%;
+    width: 100%; }
+  .grid-container {
+    height: 100%; } }
