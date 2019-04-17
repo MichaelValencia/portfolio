@@ -1,33 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-</head>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body id="bg-img">
+  <body>
     <% include menu %>
     <main id="about">
-        <h1 class="lg-heading">
-            About
-            <span class="text-secondary">Me</span>
-        </h1>
-    </main>
-    <div class="grid-container">
-        <img src="./img/IMG_20190326_3.jpg">
-            <p class="grid-item">Hello My name is Michael Valenica, I'm an ex Nursing major who was encourage by
-                a friend &
-                colleague to pursue a career in a field of interest. Which lead me to Software Development. </p>
+      <h1 class="lg-heading">
+        About
+        <span class="text-secondary">Me</span>
+      </h1>
+      <h2 class="sm-heading">
+        Let me tell you a few things...
+      </h2>
+      <div class="about-info">
+        <img src="./img/IMG_20190326_3.jpg" class="bio-image" />
+
+        <div class="bio">
+          <h3 class="text-secondary">Bio</h3>
+          <p>
+            Hello My name is Michael Valenica, I'm an ex Nursing major who was
+            encourage by a friend & colleague to pursue a career in a field of
+            interest. Which lead me to Software Development.
+          </p>
         </div>
-    </div>  
-
+        <div class="job job-1">
+          <h3>Baylor Medical Center at Irving</h3>
+          <h6>Transporter/Ancillary Tech</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis,
+            asperiores adipisci! Ducimus minima eum cupiditate quidem veritatis
+            unde illo suscipit.
+          </p>
+        </div>
+        <div class="job job-2">
+          <h3>Baylor Medical Center at Irving</h3>
+          <h6>CNA/PCT</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis,
+            asperiores adipisci! Ducimus minima eum cupiditate quidem veritatis
+            unde illo suscipit.
+          </p>
+        </div>
+        <div class="job job-3">
+          <h3>Student at EdgeTech Academy</h3>
+          <h6>Student</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis,
+            asperiores adipisci! Ducimus minima eum cupiditate quidem veritatis
+            unde illo suscipit.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer id="main-footer">
+      Copyright &copy; 2019
+    </footer>
     <script src="../dist/js/main.js"></script>
-</body>
-
+  </body>
 </html>
