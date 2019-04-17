@@ -232,6 +232,17 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.7rem; }
 
+.project-title {
+  font-size: 1.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: crimson;
+  font-weight: bold;
+  text-decoration: underline; }
+
+.project-summary {
+  font-size: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+
 .btn, .btn-dark, .btn-light {
   display: inline-block;
   padding: 0.5rem 1rem;
