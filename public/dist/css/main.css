@@ -127,14 +127,6 @@ h3 {
     padding: 0.2rem 1rem;
     background: rgba(107, 107, 107, 0.5); }
 
-button {
-  border-radius: 8px;
-  width: auto;
-  height: auto;
-  position: relative;
-  bottom: 10px;
-  left: 10px; }
-
 a {
   color: #fff;
   text-decoration: none; }
@@ -235,12 +227,41 @@ main {
   padding: 0.5rem;
   border-bottom: crimson; }
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem; }
+
+.btn, .btn-dark, .btn-light {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: crimson;
+    color: #000; }
+
+.btn-dark {
+  background: black;
+  color: #fff; }
+
+.btn-light {
+  background: #e6e6e6;
+  color: #333; }
+
 #main-footer {
   text-align: center;
   padding: 1rem;
   background: #4d4d4d;
   color: #fff;
   height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  grid-template-columns: repeat(3, 1fr); }
 
 @media screen and (max-width: 768px) {
   main {
@@ -270,69 +291,12 @@ main {
       height: 150px; }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
-    margin-top: 10vh; } }
-
-span.skill {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.4rem;
-  font-weight: bold; }
-
-li {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.6rem; }
-
-li:hover {
-  color: crimson;
-  font-weight: bolder; }
-
-.container ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center; }
-
-footer,
-.icons {
-  position: fixed;
-  width: 100%;
-  padding: auto;
-  margin: auto; }
-
-.icons i:hover {
-  color: crimson; }
-
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1em; }
-
-.project-title {
-  font-size: 1.6rem;
-  font-family: "Times New Roman", Times, serif;
-  color: white;
-  font-weight: bold;
-  text-decoration: underline; }
-
-.project a {
-  font-size: 1.2rem; }
-
-.project a:hover {
-  color: crimson;
-  text-decoration: underline; }
-
-.project-summary {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.4rem; }
-
-@media screen and (min-width: 768px) {
-  main {
-    height: 100%;
-    width: 100%; }
-  .grid-container {
-    height: 100%; } }
+    margin-top: 10vh; }
+  .projects {
+    grid-template-columns: 1fr; } }

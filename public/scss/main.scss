@@ -32,14 +32,6 @@ h3 {
     background: rgba(lighten($primary-color, 2), 0.5);
   }
 }
-button {
-  border-radius: 8px;
-  width: auto;
-  height: auto;
-  position: relative;
-  bottom: 10px;
-  left: 10px;
-}
 
 a {
   color: #fff;
@@ -182,6 +174,34 @@ main {
   padding: 0.5rem;
   border-bottom: $secondary-color;
 }
+//WorkProjects
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.7rem;
+}
+//Button Styles
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
+}
+.btn-dark {
+  @extend .btn;
+  background: darken($primary-color, 50);
+  color: #fff;
+}
+.btn-light {
+  @extend .btn;
+  background: lighten($primary-color, 50);
+  color: #333;
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
@@ -190,68 +210,3 @@ main {
   height: 60px;
 }
 @import "mobile";
-//Skills
-span.skill {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-li {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.6rem;
-}
-li:hover {
-  color: $secondary-color;
-  font-weight: bolder;
-}
-.container ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-footer,
-.icons {
-  position: fixed;
-  width: 100%;
-  padding: auto;
-  margin: auto;
-}
-.icons i:hover {
-  color: $secondary-color;
-}
-//Mywork
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1em;
-}
-.project-title {
-  font-size: 1.6rem;
-  font-family: "Times New Roman", Times, serif;
-  color: white;
-  font-weight: bold;
-  text-decoration: underline;
-}
-.project a {
-  font-size: 1.2rem;
-}
-.project a:hover {
-  color: $secondary-color;
-  text-decoration: underline;
-}
-.project-summary {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.4rem;
-}
-@media screen and (min-width: 768px) {
-  main {
-    height: 100%;
-    width: 100%;
-  }
-  .grid-container {
-    height: 100%;
-  }
-}
